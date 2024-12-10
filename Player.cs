@@ -14,6 +14,7 @@ namespace EasyStart
         private float gravity = -0.5f;
         private float jumpSpeed = 10f;
         private float ySpeed = 0;
+        private float moveSpeed = 10;
 
         public override void Act()
         {
@@ -36,6 +37,15 @@ namespace EasyStart
             {
                 ySpeed = jumpSpeed;
                 Y -= jumpSpeed;
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.A))
+            {
+                X -= moveSpeed;
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.D))
+            {
+                X += moveSpeed;
             }
         }
     }
