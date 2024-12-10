@@ -20,6 +20,7 @@ namespace EasyStart
                 Add(new Ground(), "Brick", x, 972);
                 Add(new Ground(), "Brick", x, 932);
             }
+            Add(new Ground(), "Brick", 400, 812);
         }  
     }
 }

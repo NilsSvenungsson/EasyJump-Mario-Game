@@ -12,7 +12,7 @@ namespace EasyStart
     internal class Player : Actor
     {
         private float gravity = -0.5f;
-        private float jumpSpeed = 10f;
+        private float jumpSpeed = 15f;
         private float ySpeed = 0;
         private float moveSpeed = 10;
 
