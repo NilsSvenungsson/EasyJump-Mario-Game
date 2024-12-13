@@ -24,12 +24,13 @@ namespace EasyStart
                 ySpeed += gravity;
                 Y = Y - ySpeed;
             }
-
             else
             {
-                // på marken
-                Y += ySpeed; //TODO kompensera mindre, bara så att man kommer upp till markytan men ej över
-                ySpeed = 0;
+  
+                    // på marken
+                    Y += ySpeed; //TODO kompensera mindre, bara så att man kommer upp till markytan men ej över
+                    ySpeed = 0;
+                
                
             }
 
@@ -41,6 +42,9 @@ namespace EasyStart
 
             if (Keyboard.GetState().IsKeyDown(Keys.A))
             {
+                // vänster
+                //if (IsTouching(typeof(Ground)))
+                // om vägg till vänster - stopp - gå lite tillbaka
                 X -= moveSpeed;
             }
             if (Keyboard.GetState().IsKeyDown(Keys.D))
